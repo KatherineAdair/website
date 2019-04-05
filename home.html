@@ -1,0 +1,151 @@
+<html>
+    <script src="../parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+    <style>
+        {
+            -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+        }
+        body{
+            background: #eeeee0;
+            margin: 0px;
+        }
+        #logo{
+            font-family: sans-serif;
+font-weight: 600;
+            font-size: 50px;
+            color: black;
+              display: inline-block;
+    position: fixed;
+   top: 10%;
+   left: 10%;
+   transform: translate(-50%, -50%);
+        }
+        #dot{
+            background: black;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+             position: fixed;
+   top: 70%;
+   left: 150%;
+   transform: translate(-50%, -50%);
+        }
+        .menu{
+                 display: inline-block;
+    position: fixed;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+        }
+        .menubutt{
+ font-family:monospace;
+            font-size: 20px;
+  color: black; 
+  padding: 10px 24px; 
+  cursor: pointer;
+  float: left; 
+        
+        }
+        .menubutt:hover{
+          color: grey;   
+        }
+        #homebg{
+            width: 800px;
+            height: auto;
+            display: inline-block;
+    position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+        }
+        #sliders{
+             display: inline-block;
+    position: fixed;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+        }
+        .slider{
+           
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            
+  cursor: pointer;
+            border-color: black;
+            margin-left:5px;
+            border-width: thick;
+  float: left;
+        }
+            #one{
+             background: black;  
+                 border-color: black;
+            }
+        
+        #two{
+            background :white;
+             border-color: black;
+        }
+          #thre{
+            background :white;
+               border-color: black;
+        }
+         a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+        #homemenu{
+            color: lightgray;
+        }
+    </style>
+
+<body>
+    <div id="logo">
+        C<div id="dot"></div>
+    </div>
+    <div data-depth="0.00"id="menu" class="menu" >
+        <div class="menubutt" id="homemenu">Home</div>
+        <a href="about.html"><div class="menubutt">About</div></a>
+        <div class="menubutt">Blog</div>
+        <div class="menubutt">Event</div>
+    </div>
+    
+    
+    
+    <div  data-depth="1.00">
+    <img src="DSC_2629-01.jpeg"
+        id="homebg" >
+        <div id="sliders">
+        <div class="slider"id="one"></div>
+          <div class="slider" id="two"></div>
+          <div class="slider" id="thre"></div>
+    </div>
+    </div>
+    </body>
+
+
+</html>

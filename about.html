@@ -1,0 +1,157 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            {
+            -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+            }
+        body{
+            background: #eeeee0;
+            margin: 0px;
+        }
+        #aboutmenu{
+            color: lightgrey;
+        }
+        #logo{
+            font-family: sans-serif;
+font-weight: 600;
+            font-size: 50px;
+            color: black;
+              display: inline-block;
+    position: fixed;
+   top: 10%;
+   left: 10%;
+   transform: translate(-50%, -50%);
+        }
+        #dot{
+            background: black;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+             position: fixed;
+   top: 70%;
+   left: 150%;
+   transform: translate(-50%, -50%);
+        }
+        .menu{
+                 display: inline-block;
+    position: fixed;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+        }
+        .menubutt{
+ font-family:monospace;
+            font-size: 20px;
+ 
+  padding: 10px 24px; 
+  cursor: pointer;
+  float: left; 
+        
+        }
+        .menubutt:hover{
+          color: grey;   
+        }
+        #homebg{
+            width: 500px;
+            height: auto;
+            display: inline-block;
+    position: fixed;
+   top: 50%;
+   left: 20%;
+   transform: translate(-50%, -50%);
+        }
+        #sliders{
+             display: inline-block;
+    position: fixed;
+   top: 50%;
+   left: 80%;
+   transform: translate(-50%, -50%);
+        }
+        .slider{
+           
+        font-size: 20px;
+            color: lightgray;
+            transition-duration: 0.5s;
+  cursor: pointer;
+           font-family: monospace;
+            
+          float: top;
+           
+            
+        }
+      
+       #slidersq{ }
+
+        #slidersq input{visibility: hidden; margin-bottom: 5px;}
+
+#slidersq label:hover{ color: black;font-size: 25px; }
+
+#slidersq input:checked + label { color: black;font-size: 25px; }
+        
+        #about{
+           color: black;
+            font-size: 15px;
+            font-family: monospace;
+    position: fixed;
+   top: 50%;
+   left: 55%;
+   transform: translate(-50%, -50%);   
+            width: 500px;
+        }
+        a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+    </style>
+    </head>
+<body>
+    <div id="logo">
+        C<div id="dot"></div>
+    </div>
+    <div data-depth="0.00"id="menu" class="menu" >
+        <a href="home.html"><div class="menubutt">Home</div></a>
+        <div class="menubutt" id="aboutmenu">About</div>
+        <div class="menubutt">Blog</div>
+        <div class="menubutt">Event</div>
+    </div>
+    
+    
+    
+    
+    <img src="IMG_20181025_154202_1-01.jpeg"
+        id="homebg" >
+    <div id="about"><p align="left|justify">We will have a table of our team.This will change accordinily.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+        <div id="sliders">
+            <div id="slidersq"> <input type="radio" class="sliderr"  id="one" name="problem" value="one" checked="checked">          <label for="one" class="slider" >About Us</label></div>
+            <div id="slidersq"> <input  type="radio" class="sliderr" id="two"name="problem" value="two" >             <label for="two" class="slider">Omshi</label></div>
+            <div id="slidersq">  <input type="radio" class="sliderr" id="thre" name="problem" value="three">      <label for="thre" class="slider">Auro</label></div>
+            <div id="slidersq">  <input type="radio" class="sliderr"id="four" name="problem" value="four">    <label for="four" class="slider">Amazing</label></div>
+            <div id="slidersq"> <input type="radio" class="sliderr" id="five" name="problem" value="five">      <label for="five" class="slider"> Wonderful</label></div>
+            <div id="slidersq"> <input type="radio" class="sliderr" id="six" name="problem" value="six">       <label for="six" class="slider">Fanatstc</label></div>
+            <div id="slidersq"> <input type="radio" class="sliderr"id="seve" name="problem" value="seven">    <label for="seve" class="slider">Harry</label></div>
+       
+    
+    </div>
+    </body>
+
+
+</html>
