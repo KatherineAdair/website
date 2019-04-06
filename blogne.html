@@ -1,0 +1,93 @@
+
+<html>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCGjySNdQS9bmq0_F1Q-465jAMB7FetH0U",
+    authDomain: "team-dot.firebaseapp.com",
+    databaseURL: "https://team-dot.firebaseio.com",
+    projectId: "team-dot",
+    storageBucket: "team-dot.appspot.com",
+    messagingSenderId: "1045202600109"
+  };
+  firebase.initializeApp(config);
+</script>
+    <style>
+        html{
+           scroll-behavior: smooth;
+         overflow-x: hidden;
+            
+        }
+        scrollbar-w
+        body{
+       z-index: 50;
+            background: black;
+           
+        }
+        #container{
+            height: 100%;
+            width: 100%;
+        }
+       
+        #bloglist{
+            position: absolute;
+            top: 90%;
+            left: 0%;
+            background:black;
+            width:100%;
+            height:100%;
+            z-index: 500;
+            
+        }
+        
+    </style>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="antisky.css"> 
+    
+    
+    
+   
+    <div id="bloglist"></div>
+    
+<div class="container">
+    
+    
+		<div id="scene" class="scene">
+            
+            
+           
+             <div data-depth="0.20" id="sun"></div>
+			<div data-depth="0.50" id="stars"></div>
+            
+            
+			<div data-depth="0.70" id="star2"></div>
+            
+           <div data-depth="1.00"  id="stars3">
+            </div>
+            
+		</div>
+	</div>
+
+                
+	
+
+	
+ 
+</head>
+<body>
+
+	   <audio src="soundbits_Dark_SciFi_Drone_Mixed_044.mp3" loop="true" autoplay="true"/>    
+	<!-- Scripts -->
+	<script src="../parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+</body>
+</html>
